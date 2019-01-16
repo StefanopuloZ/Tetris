@@ -86,6 +86,8 @@ button:hover {
     border-collapse: collapse;
     margin: auto;
 }
+
+
 #game-box td {
     border:solid black 1px;
     width:30px;
@@ -186,4 +188,28 @@ button:hover {
 #high-score td, #high-score th{
     padding: 4px 30px;
     border: solid black 1px;
+}
+
+@media screen and (max-width: 1366px) {
+    #game-area #game-box td {
+        border:solid black 1px;
+        width:25px;
+        height:25px;
+    }
+    .next #next-figure td {
+        width:16px;
+        height:16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #game-area #game-box td {
+        border:solid black 1px;
+        width:20px;
+        height:20px;
+    }
+    .next #next-figure td {
+        width:12px;
+        height:12px;
+    }
 }
