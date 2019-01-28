@@ -190,7 +190,7 @@ button:hover {
     border: solid black 1px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) and (min-width: 801px) {
     #game-area #game-box td {
         border:solid black 1px;
         width:25px;

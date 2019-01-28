@@ -173,6 +173,14 @@ document.getElementById("high-score-btn").addEventListener("click", viewHighScor
 document.getElementById("hide-high-score-btn").addEventListener("click", function () {
     hideBox("high-score-wrapper");
 });
+document.body.addEventListener("keydown", function (event) {
+    let keys = ["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp"];
+    console.log(event);
+    if (keys.includes(event.key)) {
+        event.preventDefault();
+        console.log('radi');
+    };
+});
 
 
 // Methods
