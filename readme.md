@@ -54,24 +54,25 @@ In order for everything to work as intended HTML table has been used for trackin
 
 - Main method for move validation:
 
-    function checkIfValidMove(shapePosition, shape) {
-        let currentShapeWidth = shapeWidth(shape);
-        let currentShapeHeight = shapeHeight(shape);
+        function checkIfValidMove(shapePosition, shape) {
+            
+            let currentShapeWidth = shapeWidth(shape);
+            let currentShapeHeight = shapeHeight(shape);
 
-        if (shapePosition[1] + emptyLinesInShapeLeft(shape) < 0 || shapePosition[1] + currentShapeWidth - 1 >= config.tableWidth) {
-            return false;
+            if (shapePosition[1] + emptyLinesInShapeLeft(shape) < 0 || shapePosition[1] + currentShapeWidth - 1 >= config.tableWidth) {
+                return false;
+            };
+
+            if (shapePosition[0] + currentShapeHeight > config.tableHeight) {
+                return false;
+            };
+
+            if (checkForOtherShapes(shapePosition, shape)) {
+                return false;
+            };
+
+            return true;
         };
-
-        if (shapePosition[0] + currentShapeHeight > config.tableHeight) {
-            return false;
-        };
-
-        if (checkForOtherShapes(shapePosition, shape)) {
-            return false;
-        };
-
-        return true;
-    };
 
 - If shape is not out of table bounds we are not checking to see if there are other shapes from before standing there blocking way. If any of our 1s are in a space of some other 1 in that table place we know move is false and are not allowing it.
 
