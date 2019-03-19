@@ -1,6 +1,6 @@
 const shapes = {
     shapeColor: function (shape) {
-        return shape
+        return shape;
     },
     I: [
         [
