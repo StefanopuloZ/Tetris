@@ -176,10 +176,8 @@ document.getElementById("hide-high-score-btn").addEventListener("click", functio
 
 document.body.addEventListener("keydown", function (event) {
     let keys = ["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp"];
-    console.log(event);
     if (keys.includes(event.key)) {
         event.preventDefault();
-        console.log('radi');
     };
 });
 
