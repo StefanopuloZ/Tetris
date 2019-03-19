@@ -1,5 +1,8 @@
 # Tetris DOM
 
+
+### Project online using Heroku **[here](https://stark-beyond-24402.herokuapp.com/)**
+
 This is tetris app built as a personal challange in JavaScript using only DOM elements. It is fairly easy building tetris in Canvas but it is a bit more complicated in pure browser. 
 
 Tetris has all of the functionalities of other tetris games, including tetrabrick preview and score based on completed lines.
